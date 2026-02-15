@@ -31,7 +31,12 @@ This site is configured to deploy automatically to GitHub Pages. See [DEPLOYMENT
 3. Configure your custom domain in GoDaddy (see DEPLOYMENT.md)
 
 ### Custom Domain (www.marwa-ai.us)
-The site is configured for the custom domain `www.marwa-ai.us`. DNS configuration instructions are in [DEPLOYMENT.md](./DEPLOYMENT.md).
+The site is configured for the custom domain `www.marwa-ai.us`. 
+
+**🚀 GoDaddy DNS Setup:**
+- **Quick Start**: [GODADDY-QUICK-START.md](./GODADDY-QUICK-START.md) - Simple step-by-step guide with exact values
+- **Detailed Guide**: [GODADDY-DNS-SETUP.md](./GODADDY-DNS-SETUP.md) - Complete instructions and troubleshooting
+- **Full Deployment**: [DEPLOYMENT.md](./DEPLOYMENT.md) - Complete deployment documentation
 
 ## 🎨 Features
 
