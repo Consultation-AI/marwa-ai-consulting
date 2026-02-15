@@ -59,8 +59,7 @@ export function ContactForm() {
           organizationType: formData.organizationType,
           message: formData.message,
           _replyto: formData.email,
-          _subject: `New Consultation Inquiry from ${formData.name}`,
-          _to: 'info@marwa-ai.us'
+          _subject: `New Consultation Inquiry from ${formData.name}`
         }),
       })
 
