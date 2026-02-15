@@ -2,6 +2,15 @@
 
 Professional consulting service website for EdConnect, helping companies, organizations, and schools implement and leverage AI solutions.
 
+## 🆘 Site Not Loading?
+
+If www.marwa-ai.us is not showing, see **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)** for step-by-step diagnosis and fixes.
+
+**Quick Fix**: Go to [Repository Settings → Pages](https://github.com/Consultation-AI/marwa-ai-consulting/settings/pages) and ensure:
+- Custom domain is set to `www.marwa-ai.us`
+- DNS check shows green checkmark
+- Enforce HTTPS is enabled
+
 ## 🚀 Quick Start
 
 ### Development
@@ -37,6 +46,9 @@ The site is configured for the custom domain `www.marwa-ai.us`.
 - **Quick Start**: [GODADDY-QUICK-START.md](./GODADDY-QUICK-START.md) - Simple step-by-step guide with exact values
 - **Detailed Guide**: [GODADDY-DNS-SETUP.md](./GODADDY-DNS-SETUP.md) - Complete instructions and troubleshooting
 - **Full Deployment**: [DEPLOYMENT.md](./DEPLOYMENT.md) - Complete deployment documentation
+
+**🔧 Troubleshooting:**
+- **Site not loading?** See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for complete diagnosis guide
 
 ## 🎨 Features
 
