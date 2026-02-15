@@ -26,27 +26,27 @@ import {
 
 const k12Services = [
   {
-    icon: Robot,
-    title: "AI Tutoring Systems",
-    description: "Personalized virtual tutors that adapt to each student's learning pace and style, providing 24/7 homework help and concept reinforcement."
+    icon: Buildings,
+    title: "Corporate AI Solutions",
+    description: "Help your company leverage AI to streamline operations, enhance decision-making, and gain competitive advantages in your industry.",
+    features: ["Process Automation", "Predictive Analytics", "AI Strategy"]
   },
   {
-    icon: BookOpen,
-    title: "Adaptive Learning Platforms",
-    description: "Intelligent systems that adjust difficulty and content based on student performance, ensuring optimal challenge levels for every learner."
+    icon: GraduationCap,
+    title: "Educational AI Integration",
+    description: "Empower schools and universities with AI tools that personalize learning, optimize administration, and prepare students for the future.",
+    features: ["Learning Platforms", "Student Analytics", "Administrative Tools"]
   },
   {
-    icon: PencilLine,
-    title: "Automated Grading & Feedback",
-    description: "AI-powered assessment tools that provide instant, detailed feedback on assignments, essays, and tests, saving teachers valuable time."
-  },
+    icon: UsersThree,
+    title: "Non-Profit & Organizations",
+    description: "Enable organizations to maximize impact through AI-driven insights, efficient resource allocation, and enhanced program delivery.",
+    features: ["Impact Measurement", "Resource Optimization", "Donor Insights"]
+  }
+]
+
+const benefits = [
   {
-    icon: Chat,
-    title: "Student Support Chatbots",
-    description: "24/7 AI assistants that answer student questions, provide resources, and guide them through administrative processes."
-  },
-  {
-    icon: ChartBar,
     title: "Early Warning Systems",
     description: "Predictive analytics that identify at-risk students early, enabling timely interventions and personalized support strategies."
   },
