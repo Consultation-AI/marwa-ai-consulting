@@ -47,25 +47,24 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      const formPayload = new FormData()
-      formPayload.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY')
-      formPayload.append('subject', `New Consultation Inquiry from ${formData.name}`)
-      formPayload.append('from_name', 'EdConnect Website')
-      formPayload.append('name', formData.name)
-      formPayload.append('email', formData.email)
-      formPayload.append('organization', formData.organization || "Not specified")
-      formPayload.append('organization_type', formData.organizationType)
-      formPayload.append('message', formData.message)
-      formPayload.append('redirect', 'false')
-
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('https://formspree.io/f/xanyrgdp', {
         method: 'POST',
-        body: formPayload
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization || "Not specified",
+          organizationType: formData.organizationType,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `New Consultation Inquiry from ${formData.name}`,
+          _to: 'info@marwa-ai.us'
+        }),
       })
 
-      const data = await response.json()
-
-      if (data.success) {
+      if (response.ok) {
         setIsSubmitting(false)
         setIsSubmitted(true)
         toast.success("Thank you! Your inquiry has been sent.", {
@@ -80,14 +79,13 @@ export function ContactForm() {
           message: ""
         })
       } else {
-        throw new Error(data.message || 'Form submission failed')
+        throw new Error('Form submission failed')
       }
     } catch (error) {
       setIsSubmitting(false)
       toast.error("Unable to send inquiry", {
         description: "Please email us directly at info@marwa-ai.us"
       })
-      console.error('Form submission error:', error)
     }
   }
 
