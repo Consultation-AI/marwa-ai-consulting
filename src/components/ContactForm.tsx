@@ -60,6 +60,7 @@ export function ContactForm() {
           message: formData.message,
           _replyto: formData.email,
           _subject: `New Consultation Inquiry from ${formData.name}`
+        })
       })
 
       if (response.ok) {
