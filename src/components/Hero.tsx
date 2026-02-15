@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Brain, ArrowRight } from "@phosphor-icons/react"
+import { ArrowRight } from "@phosphor-icons/react"
 import { motion } from "framer-motion"
 
 export function Hero() {
@@ -8,7 +8,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/10">
         <div className="absolute inset-0" style={{
           backgroundImage: `
@@ -24,22 +24,17 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl"
+          className="max-w-4xl mx-auto text-center"
         >
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6 border border-primary/20">
-            <Brain weight="duotone" className="text-primary" />
-            <span className="text-sm font-medium">AI Consulting Excellence</span>
-          </div>
-
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-foreground leading-tight">
             Transform Your Organization with AI Innovation
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Expert consulting services helping companies, organizations, and schools implement cutting-edge AI solutions that drive real results.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground transition-all hover:scale-[1.02] shadow-lg shadow-accent/20"
