@@ -46,15 +46,13 @@ TTL: 600 seconds
 ```
 Type: CNAME
 Name: www
-Value: <your-github-username>.github.io
+Value: consultation-ai.github.io
 TTL: 600 seconds (or default)
 ```
 
-Replace `<your-github-username>` with your actual GitHub username.
+**EXACT VALUE**: `consultation-ai.github.io` (all lowercase, no https://, no trailing dot)
 
-### Example DNS Configuration:
-If your GitHub username is `marwa-ai`:
-- CNAME: www → marwa-ai.github.io
+This points your www subdomain to the GitHub Pages hosting for the Consultation-AI organization.
 
 ## Verification Steps
 
@@ -75,8 +73,8 @@ If your GitHub username is `marwa-ai`:
 ## Troubleshooting
 
 ### DNS Issues
-- Verify all A records are correct (185.199.108-111.153)
-- Ensure CNAME points to your-username.github.io (not the repo)
+- Verify all A records are correct (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
+- Ensure CNAME points to consultation-ai.github.io (all lowercase, no www, no https://)
 - Check DNS propagation status
 
 ### HTTPS Not Working

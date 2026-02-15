@@ -1,5 +1,46 @@
 # GoDaddy DNS Configuration Quick Reference
 
+## 📋 COPY-PASTE VALUES - EXACTLY WHAT TO ENTER
+
+### 4 A Records (Add all 4 exactly as shown):
+```
+Record 1:
+  Type: A
+  Name: @
+  Value: 185.199.108.153
+  TTL: 600 seconds
+
+Record 2:
+  Type: A
+  Name: @
+  Value: 185.199.109.153
+  TTL: 600 seconds
+
+Record 3:
+  Type: A
+  Name: @
+  Value: 185.199.110.153
+  TTL: 600 seconds
+
+Record 4:
+  Type: A
+  Name: @
+  Value: 185.199.111.153
+  TTL: 600 seconds
+```
+
+### 1 CNAME Record (Add exactly as shown):
+```
+Type: CNAME
+Name: www
+Value: consultation-ai.github.io
+TTL: 600 seconds
+```
+
+⚠️ **IMPORTANT**: The CNAME value is `consultation-ai.github.io` (all lowercase, no https://, no trailing dot)
+
+---
+
 ## Required DNS Records for www.marwa-ai.us
 
 ### Step 1: Log into GoDaddy
@@ -32,15 +73,15 @@ Add **1 CNAME record** for the www subdomain:
 
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
-| CNAME | www | YOUR-GITHUB-USERNAME.github.io | 600 seconds |
+| CNAME | www | consultation-ai.github.io | 600 seconds |
 
-**Replace** `YOUR-GITHUB-USERNAME` with your actual GitHub username.
+**EXACT VALUE TO ENTER**: `consultation-ai.github.io`
 
 **How to add:**
 1. Click **Add** button
 2. Select **Type: CNAME**
 3. Name: `www`
-4. Value: `your-github-username.github.io` (no trailing dot, no https://)
+4. Value: `consultation-ai.github.io` (all lowercase, no trailing dot, no https://)
 5. TTL: 600 seconds or leave as default
 6. Click **Save**
 
@@ -69,8 +110,8 @@ nslookup www.marwa-ai.us
 ```
 
 ### Expected Results
-- `dig marwa-ai.us` should show the 4 GitHub IPs
-- `dig www.marwa-ai.us` should show your-username.github.io
+- `dig marwa-ai.us` should show the 4 GitHub IPs (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
+- `dig www.marwa-ai.us` should show consultation-ai.github.io
 
 ## Troubleshooting
 
