@@ -46,24 +46,26 @@ export function ContactForm() {
 
     setIsSubmitting(true)
 
-    const emailBody = `
-New Consultation Inquiry from EdConnect Website
-
-Name: ${formData.name}
-Email: ${formData.email}
-Organization: ${formData.organization || "Not specified"}
-Organization Type: ${formData.organizationType}
-
-Message:
-${formData.message}
-    `.trim()
-
-    const mailtoLink = `mailto:info@marwa-ai.us?subject=New Consultation Inquiry from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(emailBody)}`
-
     try {
-      window.location.href = mailtoLink
-      
-      setTimeout(() => {
+      const formPayload = new FormData()
+      formPayload.append('access_key', 'YOUR_WEB3FORMS_ACCESS_KEY')
+      formPayload.append('subject', `New Consultation Inquiry from ${formData.name}`)
+      formPayload.append('from_name', 'EdConnect Website')
+      formPayload.append('name', formData.name)
+      formPayload.append('email', formData.email)
+      formPayload.append('organization', formData.organization || "Not specified")
+      formPayload.append('organization_type', formData.organizationType)
+      formPayload.append('message', formData.message)
+      formPayload.append('redirect', 'false')
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formPayload
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
         setIsSubmitting(false)
         setIsSubmitted(true)
         toast.success("Thank you! Your inquiry has been sent.", {
@@ -77,12 +79,15 @@ ${formData.message}
           organizationType: "",
           message: ""
         })
-      }, 1000)
+      } else {
+        throw new Error(data.message || 'Form submission failed')
+      }
     } catch (error) {
       setIsSubmitting(false)
       toast.error("Unable to send inquiry", {
         description: "Please email us directly at info@marwa-ai.us"
       })
+      console.error('Form submission error:', error)
     }
   }
 

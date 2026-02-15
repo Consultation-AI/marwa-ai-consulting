@@ -78,7 +78,9 @@ The contact form collects:
 - Organization type
 - Message/inquiry details
 
-Form submissions open the user's email client with pre-filled information sent to **info@marwa-ai.us**.
+Form submissions are sent directly to **info@marwa-ai.us** using Web3Forms (free service).
+
+**⚠️ Setup Required**: Follow the instructions in [FORM-SETUP.md](./FORM-SETUP.md) to configure your Web3Forms access key (takes 5 minutes).
 
 ## 📄 License
 
