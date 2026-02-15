@@ -22,6 +22,14 @@ npm run preview
 
 ## 📦 Deployment
 
+### ⚡ Quick Deploy (Recommended)
+Deploy in one command from Spark or terminal:
+```bash
+npm run deploy
+```
+
+**See:** [SPARK-DEPLOY.md](./SPARK-DEPLOY.md) - **One-command deployment guide for Spark users**
+
 ### GitHub Pages
 This site is configured to deploy automatically to GitHub Pages. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
 
