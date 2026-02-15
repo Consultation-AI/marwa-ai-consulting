@@ -4,12 +4,16 @@ Professional consulting service website for EdConnect, helping companies, organi
 
 ## 🆘 Site Not Loading?
 
-If www.marwa-ai.us is not showing, see **[TROUBLESHOOTING.md](./TROUBLESHOOTING.md)** for step-by-step diagnosis and fixes.
+**ISSUE**: www.marwa-ai.us is not showing
 
-**Quick Fix**: Go to [Repository Settings → Pages](https://github.com/Consultation-AI/marwa-ai-consulting/settings/pages) and ensure:
-- Custom domain is set to `www.marwa-ai.us`
-- DNS check shows green checkmark
-- Enforce HTTPS is enabled
+**ROOT CAUSE**: DNS records not configured at GoDaddy
+
+**FIX**: See **[QUICK-FIX.md](./QUICK-FIX.md)** for 2-step solution
+
+1. Configure DNS at GoDaddy (5 records)
+2. Configure custom domain in GitHub Pages Settings
+
+**Also see**: [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) | [SITE-NOT-LOADING-FIX.md](./SITE-NOT-LOADING-FIX.md)
 
 ## 🚀 Quick Start
 
