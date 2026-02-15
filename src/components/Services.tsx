@@ -45,48 +45,6 @@ const k12Services = [
   }
 ]
 
-const benefits = [
-  {
-    title: "Early Warning Systems",
-    description: "Predictive analytics that identify at-risk students early, enabling timely interventions and personalized support strategies."
-  },
-  {
-    icon: Chalkboard,
-    title: "Lesson Planning Assistants",
-    description: "AI tools that help teachers create engaging, standards-aligned lesson plans with differentiated instruction strategies."
-  },
-  {
-    icon: Translate,
-    title: "Language Learning AI",
-    description: "Conversational AI for practicing foreign languages with real-time pronunciation feedback and cultural context."
-  },
-  {
-    icon: FileText,
-    title: "Reading Comprehension Tools",
-    description: "AI-powered reading assistance that adjusts text complexity, provides definitions, and tracks comprehension progress."
-  },
-  {
-    icon: ShieldCheck,
-    title: "Plagiarism Detection",
-    description: "Advanced AI systems that detect academic dishonesty and help maintain academic integrity across assignments."
-  },
-  {
-    icon: Calendar,
-    title: "Smart Scheduling",
-    description: "AI-optimized class scheduling that balances teacher workloads, room availability, and student course requirements."
-  },
-  {
-    icon: Users,
-    title: "Parent Communication Platforms",
-    description: "AI-enhanced systems that automate parent updates, translate communications, and track student progress reporting."
-  },
-  {
-    icon: Question,
-    title: "Socratic Learning Assistants",
-    description: "AI tools that guide students through problem-solving using questioning techniques rather than providing direct answers."
-  }
-]
-
 const higherEdServices = [
   {
     icon: Student,
