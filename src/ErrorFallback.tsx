@@ -15,7 +15,7 @@ export const ErrorFallback = ({ error, resetErrorBoundary }) => {
           <AlertTriangleIcon />
           <AlertTitle>The application has encountered a runtime error</AlertTitle>
           <AlertDescription>
-            Something unexpected happened while running the application. The error details are shown below. Please contact us at www.marwa-ai.us for assistance.
+            Something unexpected happened while running the application. The error details are shown below. Please contact us at <a href="https://www.marwa-ai.us" className="underline hover:text-primary" target="_blank" rel="noopener noreferrer">www.marwa-ai.us</a> for assistance.
           </AlertDescription>
         </Alert>
         
