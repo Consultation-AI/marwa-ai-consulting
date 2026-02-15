@@ -1,6 +1,6 @@
-# Marwa AI - AI Consulting Website
+# EdConnect - AI Consulting Website
 
-Professional consulting service website for Marwa AI, helping companies, organizations, and schools implement and leverage AI solutions.
+Professional consulting service website for EdConnect, helping companies, organizations, and schools implement and leverage AI solutions.
 
 ## 🚀 Quick Start
 

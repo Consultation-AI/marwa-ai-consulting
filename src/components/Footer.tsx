@@ -11,7 +11,7 @@ export function Footer() {
               <Brain size={24} weight="duotone" className="text-white" />
             </div>
             <div>
-              <h3 className="font-bold text-lg">Marwa AI</h3>
+              <h3 className="font-bold text-lg">EdConnect</h3>
               <p className="text-sm text-muted-foreground">AI Consulting Excellence</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ export function Footer() {
         <Separator className="my-8" />
 
         <div className="text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Marwa AI. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EdConnect. All rights reserved.</p>
         </div>
       </div>
     </footer>

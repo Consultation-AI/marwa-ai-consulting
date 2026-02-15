@@ -29,7 +29,7 @@ export function Navigation() {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center transition-transform group-hover:scale-105">
               <Brain size={24} weight="duotone" className="text-white" />
             </div>
-            <span className="font-bold text-xl">Marwa AI</span>
+            <span className="font-bold text-xl">EdConnect</span>
           </button>
 
           {isMobile ? (

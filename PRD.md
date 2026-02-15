@@ -1,6 +1,6 @@
 # Planning Guide
 
-A professional consulting service website that showcases Marwa AI's expertise in helping companies, organizations, and schools implement AI solutions, featuring a client inquiry form and seamless integration with custom domain hosting.
+A professional consulting service website that showcases EdConnect's expertise in helping companies, organizations, and schools implement AI solutions, featuring a client inquiry form and seamless integration with custom domain hosting.
 
 **Experience Qualities**:
 1. **Professional** - Establishes credibility and expertise through clean design and authoritative content

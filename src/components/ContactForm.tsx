@@ -47,7 +47,7 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     const emailBody = `
-New Consultation Inquiry from Marwa AI Website
+New Consultation Inquiry from EdConnect Website
 
 Name: ${formData.name}
 Email: ${formData.email}

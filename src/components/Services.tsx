@@ -102,7 +102,7 @@ export function Services() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">Why Choose Marwa AI?</h3>
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">Why Choose EdConnect?</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <motion.div
